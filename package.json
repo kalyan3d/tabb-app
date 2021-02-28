@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
-    "test": "npm test"
+    "test": "npm test",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",

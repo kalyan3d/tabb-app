@@ -1,0 +1,58 @@
+@import "./variables";
+@import "./fonts";
+@import "./icofonts";
+
+html,
+body {
+  font-family: $font-family;
+  font-weight: normal;
+}
+
+body {
+  //background-image: url("./../assets/images/landing-bg.jpg");
+}
+
+.bg-dark {
+  background-color: $secondary-color !important;
+}
+
+.btn {
+  border-radius: 0;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-link,
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+.btn-secondary {
+  background-color: lighten($color: $secondary-color, $amount: 5);
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.logo {
+  width: 164px;
+}
+
+.alert {
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+}
