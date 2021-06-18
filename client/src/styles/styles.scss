@@ -56,3 +56,20 @@ a {
   border-radius: 0;
   padding: 0.5rem 1rem;
 }
+
+footer {
+  padding-top: 1.5rem;
+}
+
+.btn-facebook-login {
+  background-color: #1876f2;
+  color: #fff;
+
+  i {
+    margin: 0 15px 0 10px;
+  }
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
