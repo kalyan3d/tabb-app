@@ -9,38 +9,14 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <header>
       <nav className="navbar navbar-dark bg-dark py-0">
         <div className="container">
-          <a className="navbar-brand" href="#!">
+          <Link className="navbar-brand" to="/">
             The Artist Blue Book
-          </a>
+          </Link>
           <a className="btn btn-secondary p-2 px-4" onClick={logout}>
             Sign out
           </a>
         </div>
       </nav>
-      <div className="container">
-        <ul className="nav">
-          <li className="nav-item">
-            <Link className="nav-link" to="/about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link" to="/blog">
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link" to="/contact">
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link" to="/dashboard">
-              Dashboard
-            </Link>
-          </li>
-        </ul>
-      </div>
     </header>
   );
 
@@ -48,7 +24,9 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <header>
       <nav className="navbar navbar-dark bg-dark py-0">
         <div className="container">
-          <Link className="navbar-brand" to="/"></Link>
+          <Link className="navbar-brand" to="/">
+            The Artist Blue Book
+          </Link>
           <Link className="btn btn-secondary p-2 px-4" to="/login">
             Sign in
           </Link>

@@ -7,7 +7,7 @@ import Register from "./components/auth/Register";
 import Landing from "./components/layout/Landing";
 import Footer from "./components/layout/Footer";
 import Alert from "./components/layout/Alert";
-import Dashboard from "./components/dashboard/Dashboard";
+import User from "./components/user/User";
 import CreateProfile from "./components/profile-form/CreateProfile";
 import PrivateRoute from "./components/routing/PrivateRouting";
 
@@ -32,15 +32,15 @@ const App = () => {
         <Fragment>
           <Navbar />
           <Route exact path="/" component={Landing} />
-          <main className="container">
+          <main className="container p-3">
             <Alert />
             <Switch>
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
-              <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/user" component={User} />
               <PrivateRoute
                 exact
-                path="/create-profile"
+                path="/user/profile"
                 component={CreateProfile}
               />
             </Switch>
